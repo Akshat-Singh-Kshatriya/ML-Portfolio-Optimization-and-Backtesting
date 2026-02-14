@@ -49,10 +49,6 @@ The strategy intentionally sacrifices peak returns to reduce concentration risk.
 * **Viz:** `Matplotlib`, `Seaborn`
 
 ---
-
-## 💻 How to Run
-
-### 1. Clone Repository
 ## 💻 How to Run
 
 ### 1. Clone Repository
