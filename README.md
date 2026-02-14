@@ -21,7 +21,7 @@ This project is an algorithmic portfolio construction engine built for **Nifty 5
 * **Realistic Backtesting**
     * **0.05% transaction costs** included
     * Slippage modeling & periodic rebalancing
-    * 
+  
 ## 📊 Backtest Results (2018–2023)
 
 | Metric | Strategy | Benchmark (Nifty 50) |
