@@ -54,7 +54,6 @@ The strategy intentionally sacrifices peak returns to reduce concentration risk.
 ### 1. Clone Repository
 ```bash
 git clone https://github.com/Akshat-Singh-Kshatriya/ML-Portfolio-Optimization-and-Backtesting.git
-cd ML-Portfolio-Optimization-and-Backtesting
 ```
 ### 2. Install Dependencies
 
