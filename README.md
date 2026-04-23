@@ -2,7 +2,7 @@
 
 This project is an algorithmic portfolio construction engine built for **Nifty 50 equities**. It integrates **Machine Learning (XGBoost)** with **Mean-Variance Optimization** to generate dynamically rebalanced, risk-controlled portfolios. The framework prioritizes stability and risk-adjusted returns and was stress-tested during the 2020 COVID market crash.
 
-## 🚀 Key Features
+## Key Features
 
 * **Predictive Modeling**
     * XGBoost classifier for regime detection
@@ -22,7 +22,7 @@ This project is an algorithmic portfolio construction engine built for **Nifty 5
     * **0.05% transaction costs** included
     * Slippage modeling & periodic rebalancing
   
-## 📊 Backtest Results (2018–2023)
+## Backtest Results (2018–2023)
 
 | Metric | Strategy | Benchmark (Nifty 50) |
 | :--- | :--- | :--- |
@@ -31,7 +31,7 @@ This project is an algorithmic portfolio construction engine built for **Nifty 5
 | **Max Drawdown** | **-45.44%** | -- |
 | **Sharpe Ratio** | **0.72** | -- |
 
-### 📈 Interpretation
+### Interpretation
 The strategy intentionally sacrifices peak returns to reduce concentration risk.
 **L2 Regularization** forces diversification across Pharma, Auto, and Banking sectors instead of overweighting momentum-heavy stocks (like Reliance) which carry higher variance.
 
@@ -40,7 +40,7 @@ The strategy intentionally sacrifices peak returns to reduce concentration risk.
 * Lower estimation error in covariance matrices.
 * Improved risk-adjusted performance (Sharpe Ratio).
   
-## 🛠 Tech Stack
+## Tech Stack
 
 * **Language:** Python
 * **Data:** `yfinance` (Yahoo Finance)
@@ -48,8 +48,7 @@ The strategy intentionally sacrifices peak returns to reduce concentration risk.
 * **Optimization:** `PyPortfolioOpt` (Efficient Frontier, Ledoit-Wolf)
 * **Viz:** `Matplotlib`, `Seaborn`
 
----
-## 💻 How to Run
+## How to Run
 
 ### 1. Clone Repository
 ```bash
