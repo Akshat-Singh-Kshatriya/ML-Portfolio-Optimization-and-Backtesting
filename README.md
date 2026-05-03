@@ -30,6 +30,8 @@ pip install -r requirements.txt
 
 ```bash
 python data_extraction.py
-Run the return.sql in the PostgreSQL query tool.
+```
+Run the returns.sql in the PostgreSQL query tool.
+```bash
 python portfolio.py
 ```
