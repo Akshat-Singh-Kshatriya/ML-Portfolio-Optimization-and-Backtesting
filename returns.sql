@@ -1,15 +1,15 @@
--- CREATE TABLE raw_prices (
---     "Date" DATE,
---     "Asset" VARCHAR(20),
---     "Close_Price" NUMERIC 
+CREATE TABLE raw_prices (
+    "Date" DATE,
+    "Asset" VARCHAR(20),
+    "Close_Price" NUMERIC 
+);
+CREATE TABLE nifty_prices (
+    "Date" DATE,
+    "Nifty_Close" NUMERIC
+);
+copy nifty_prices FROM 'path/nifty50_prices.csv' WITH CSV HEADER;
 
--- CREATE TABLE nifty_prices (
---     "Date" DATE,
---     "Nifty_Close" NUMERIC
-
--- copy nifty_prices FROM 'D:/akshat/Downloads/nifty50_prices.csv' WITH CSV HEADER;
-
--- copy raw_prices FROM 'D:/akshat/Downloads/raw_prices.csv' WITH CSV HEADER
+copy raw_prices FROM 'path/raw_prices.csv' WITH CSV HEADER
 
 CREATE OR REPLACE VIEW ml_feature_set AS
 WITH LogReturns AS (
@@ -33,5 +33,5 @@ WHERE log_return IS NOT NULL
 WINDOW w AS (PARTITION BY "Asset" ORDER BY "Date");
 
 
-copy (SELECT * FROM ml_feature_set WHERE lag_5 IS NOT NULL AND rolling_vol_21d IS NOT NULL) TO 'D:/akshat/Downloads/portfolio_features.csv' WITH CSV HEADER;
+copy (SELECT * FROM ml_feature_set WHERE lag_5 IS NOT NULL AND rolling_vol_21d IS NOT NULL) TO 'path/portfolio_features.csv' WITH CSV HEADER;
 
