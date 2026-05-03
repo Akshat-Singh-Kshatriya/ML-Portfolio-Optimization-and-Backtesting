@@ -3,7 +3,5 @@ pandas
 numpy
 scikit-learn
 xgboost
-PyPortfolioOpt
-ta
+scipy
 matplotlib
-seaborn
